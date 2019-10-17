@@ -29,4 +29,12 @@ function paintToCanvas() {
   }, 16)
 }
 
+function takePhoto() {
+  //played the sound
+  snap.currentTime = 0
+  snap.play()
+}
+
+video.addEventListener('canplay', paintToCanvas)
+
 // getVideo()
